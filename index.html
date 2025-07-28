@@ -3,12 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fútbol Libre TV - Ver Partidos en Vivo Gratis (HD) | Inicio</title>
+  <title>24/7 Free Live Soccer Streams on Soccer-Streams.site</title>
   <link rel="stylesheet" href="output.css">
 </head>
 <body>
-
-
   <header class="site-header">
     <div class="header-container">
       <a href="/" style="text-decoration: none; color: inherit;">
@@ -16,11 +14,7 @@
       </a>
     </div>
   </header>
-
-
-
   <div class="container">
-
     <script type="text/javascript">
 	atOptions = {
 		'key' : 'fcd924dc074918e183b84bf9ea525e7c',
@@ -31,19 +25,14 @@
 	};
 </script>
 <script type="text/javascript" src="//encouragingbrightest.com/fcd924dc074918e183b84bf9ea525e7c/invoke.js"></script>
-
   <div class="banner">
    <h1>⚽ Today's Free Football Matches</h1>
 <p class="subtext">Complete schedule updated in real-time</p>
 <p class="subtext">Watch all the live matches and enjoy the best free coverage.</p>
 <p class="subtext">Never miss a goal or result with our live streaming.</p>
 <p class="subtext">Your trusted source for uninterrupted, cost-free football action.</p>
-
   </div>
-
   <div class="agenda-date" id="agenda-date"></div>
-
-  <!-- Search Box -->
   <div class="search-box">
     <input type="text" id="searchInput" placeholder="Search League And Teams..." />
     <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -55,13 +44,8 @@
       ></path>
     </svg>
   </div>
-
 <div style="display: flex; align-items: flex-start; gap: 20px;">
-
-  <!-- Matches container -->
   <div id="matches" style="flex: 1;"></div>
-
-  <!-- Sidebar -->
   <aside class="sidebar">
     <script type="text/javascript">
 	atOptions = {
@@ -74,7 +58,6 @@
 </script>
 <script type="text/javascript" src="//encouragingbrightest.com/b933bf287d1777ad1040e18f96b0197c/invoke.js"></script>
 
-
 <script type="text/javascript">
 	atOptions = {
 		'key' : 'c1065205898c26480320f3099c71d573',
@@ -85,12 +68,8 @@
 	};
 </script>
 <script type="text/javascript" src="//encouragingbrightest.com/c1065205898c26480320f3099c71d573/invoke.js"></script>
-
   </aside>
-
 </div>
-
-
 </div>
   </div>
 
@@ -105,7 +84,6 @@
   function encode(str) {
     return btoa(unescape(encodeURIComponent(str)));
   }
-
   fetch(apiUrl)
   .then(res => res.json())
   .then(data => {
@@ -117,8 +95,6 @@
     renderMatches(allMatches);
   });
 
-
-  // Render all matches
   function renderMatches(data) {
     matchesContainer.innerHTML = "";
     data.forEach(match => {
@@ -156,8 +132,6 @@
       matchesContainer.appendChild(box);
     });
   }
-
-  // Search filter
   searchInput.addEventListener("input", () => {
     const value = searchInput.value.toLowerCase();
     const filtered = allMatches.filter(match =>
