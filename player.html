@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type='text/javascript' src='//encouragingbrightest.com/0f/04/8b/0f048b9de78a46cd83c6f8e537d37bbc.js'></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>| Soccer</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="/" style="text-decoration: none; color: inherit;">
+        <div class="site-name">⚽Soccer-Streams.site</div>
+      </a>
+    </div>
+  </header>
+        </div>
+        <div class="container">
+            <div class="content-box">
+                <section class="main-content">
+                    <div class="ad-center">
+                    <script type="text/javascript">
+	atOptions = {
+		'key' : '109519ea4bcd2280512ab2434d575dee',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//encouragingbrightest.com/109519ea4bcd2280512ab2434d575dee/invoke.js"></script>
+                    </div>
+                    <div class="iframe-container">
+                           <iframe id="frame-player" allowfullscreen></iframe>
+                    </div>
+                    <div class="ad-center">
+                     <script type="text/javascript">
+	atOptions = {
+		'key' : '7b1bc526862870a95af76c62d3de5e3f',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//encouragingbrightest.com/7b1bc526862870a95af76c62d3de5e3f/invoke.js"></script>
+                    </div>
+                </section>
+                <aside class="sidebar">
+                    <div class="ad">
+                    <script type="text/javascript">
+	atOptions = {
+		'key' : '3d452b38162d3abf0c60be3ff06ac0bc',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//encouragingbrightest.com/3d452b38162d3abf0c60be3ff06ac0bc/invoke.js"></script>
+                    </div>
+                    <div class="ad">
+                     <script type="text/javascript">
+	atOptions = {
+		'key' : 'b933bf287d1777ad1040e18f96b0197c',
+		'format' : 'iframe',
+		'height' : 300,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//encouragingbrightest.com/b933bf287d1777ad1040e18f96b0197c/invoke.js"></script>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <script>
+  function decode(str) {
+    try {
+      return decodeURIComponent(escape(atob(str)));
+    } catch (e) {
+      return "";
+    }
+  }
+  const urlParams = new URLSearchParams(window.location.search);
+  const encoded = urlParams.get("code");
+  const iframe = document.getElementById("frame-player");
+
+  // Get team and league names from URL params
+  const team1 = urlParams.get("team1") || "Team 1";
+  const team2 = urlParams.get("team2") || "Team 2";
+  const league = urlParams.get("league") || "League";
+
+  // Set the page title dynamically based on match info
+  document.title = `${team1} vs ${team2} | ${league} | Live Stream`;
+
+  if (encoded) {
+    const decodedLink = decode(encoded);
+    if (decodedLink.startsWith("http")) {
+      iframe.src = decodedLink;
+    } else {
+      document.body.innerHTML = "<h2 style='color:white;text-align:center;margin-top:20%'>Invalid or Missing Stream Link</h2>";
+    }
+  } else {
+    document.body.innerHTML = "<h2 style='color:white;text-align:center;margin-top:20%'>No stream code provided.</h2>";
+  }
+</script>
+</body></html>
