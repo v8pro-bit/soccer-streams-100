@@ -142,12 +142,27 @@
     renderMatches(filtered);
   });
 </script>
-<div id="waustat-wrapper">
-    <script id="_waunqo">
-        var _wau = _wau || [];
-        _wau.push(["dynamic", "4jxmn0843f", "nqo", "c4302bffffff", "small"]);
-    </script>
-    <script async src="//waust.at/d.js"></script>
-</div>
+<script id="_wauwnc">
+  // Inject CSS to hide the widget
+  (function() {
+    var style = document.createElement("style");
+    style.innerHTML = `
+      #_wauwnc,
+      .waust-widget,
+      [src*="waust.at"] {
+        display: none !important;
+        visibility: hidden !important;
+      }
+    `;
+    document.head.appendChild(style);
+  })();
+
+  // Load WAU script
+  var _wau = _wau || [];
+  _wau.push(["dynamic", "53mp35ft2s", "wnc", "c4302bffffff", "small"]);
+</script>
+<script async src="//waust.at/d.js"></script>
+
 </body>
 </html>
+
